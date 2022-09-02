@@ -11,11 +11,6 @@ COPY package*.json ./
 RUN npm ci
 # Bundle app source
 COPY . .
-RUN if [ "$BUILD_ENV" = "development" ]; \
-	then ionic build;  \
-	else ionic build --prod; \
-	fi
-
 ## Run 
 FROM nginx:alpine
 #COPY www /usr/share/nginx/html
