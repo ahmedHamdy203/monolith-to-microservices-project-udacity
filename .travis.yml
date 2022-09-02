@@ -22,8 +22,8 @@ Install:
   - docker push 2022411/udagram-api-user:v1
 
   - docker build -t udagram-frontend ./udagram-frontend
-  - docker tag udagram-frontend 2022411/udagram-frontend:v1
-  - docker push 2022411/udagram-frontend:v1
+  - docker tag udagram-frontend 2022411/udagram-frontend:v6
+  - docker push 2022411/udagram-frontend:v6
 
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
   - docker tag udagram-reverseproxy 2022411/udagram-reverseproxy:v1
