@@ -11,4 +11,4 @@ import {config} from './config/config';
 //   'dialect': config.dialect,
 //   'storage': ':memory:',
 // });
-export const sequelize = Sequelize(`postgres://${config.username}:${config.password}@${config.host}:5432/postgres`);
+export const sequelize = new Sequelize(`postgres://${config.username}:${config.password}@${config.host}:5432/postgres`);
