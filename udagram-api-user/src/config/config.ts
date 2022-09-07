@@ -5,7 +5,8 @@ export const config = {
   'host': process.env.POSTGRES_HOST.replace("\n", ""),
   'dialect': 'postgres'.replace("\n", ""),
   'aws_region': process.env.AWS_REGION.replace("\n", ""),
-  'aws_profile': process.env.AWS_PROFILE.replace("\n", ""),
+  // 'aws_profile': process.env.AWS_PROFILE.replace("\n", ""),
+  'aws_profile': "default",
   'aws_media_bucket': process.env.AWS_BUCKET.replace("\n", ""),
   'url': process.env.URL.replace("\n", ""),
   'jwt': {
